@@ -1,7 +1,7 @@
 # Robot Path Simulation
 ## Overview
 
-This program simulates the movement of a robot on a grid-based map loaded from a file (map.txt). The robot starts at the center of the map and moves in a random direction, avoiding obstacles while consuming fuel. The simulation is run three times to demonstrate different possible paths.
+his program simulates the movement of a robot on a grid-based map loaded from a file (map.txt). The robot starts at the center of the map and moves in a random direction, avoiding obstacles while consuming fuel. The simulation is run three times to demonstrate different possible paths. Additionally, the robot must carefully manage its fuel and ensure that it returns to the starting point (base) before running out of fuel in order not to lose points.
 
 ## Features
 
