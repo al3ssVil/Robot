@@ -3,6 +3,8 @@
 
 his program simulates the movement of a robot on a grid-based map loaded from a file (map.txt). The robot starts at the center of the map and moves in a random direction, avoiding obstacles while consuming fuel. The simulation is run three times to demonstrate different possible paths. Additionally, the robot must carefully manage its fuel and ensure that it returns to the starting point (base) before running out of fuel in order not to lose points.
 
+The robot moves randomly in one direction as long as it has fuel and there are no obstacles. If it can't move in the current direction, it will turn left, and if that doesn't work, it will turn right. If it still can't move, it will turn around and head back to the base.
+
 ## Features
 
 Reads a grid-based map from a file.
