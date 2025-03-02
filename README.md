@@ -17,9 +17,9 @@ Displays the path taken and the number of points collected.
 
 ## File Structure
 
-main.cpp - Contains the implementation of the robot movement simulation.
+- main.cpp - Contains the implementation of the robot movement simulation.
 
-map.txt - The map file that defines the grid (must be present in the same directory as the executable).
+- map.txt - The map file that defines the grid (must be present in the same directory as the executable).
 
 ## Map File Format (map.txt)
 
@@ -29,9 +29,9 @@ The number of rows and columns of the grid.
 
 A matrix where each cell represents a position:
 
-0 for open paths.
+  - -1 for obstacles.
 
--1 for obstacles.
+  - any other number for open paths.
 
 ### Example map.txt:
 ![image](https://github.com/user-attachments/assets/72714c24-303c-45f8-9d22-8bf7e51600e9)
