@@ -53,7 +53,7 @@ public:
 			Move_right(points, k, stack, robot);
 		else
 			if (m_matrix[robot.first][robot.second - 1] != -1 && k != 0)
-				Move_up(points, k, stack, robot);
+				Move_left(points, k, stack, robot);
 	}
 	void Move_right(int& points, int& k, std::stack<std::pair<int, int>>& stack, std::pair<int, int>& robot)
 	{
@@ -65,10 +65,10 @@ public:
 			points++;
 		}
 		if (m_matrix[robot.first - 1][robot.second] != -1 && k != 0)
-			Move_down(points, k, stack, robot);
+			Move_up(points, k, stack, robot);
 		else
 			if (m_matrix[robot.first + 1][robot.second] != -1 && k != 0)
-				Move_up(points, k, stack, robot);
+				Move_down(points, k, stack, robot);
 	}
 	void Move_up(int& puncte, int& k, std::stack<std::pair<int, int>>& stiva, std::pair<int, int>& robot)
 	{
@@ -80,10 +80,10 @@ public:
 			puncte++;
 		}
 		if (m_matrix[robot.first][robot.second - 1] != -1 && k != 0)
-			Move_down(puncte, k, stiva, robot);
+			Move_left(puncte, k, stiva, robot);
 		else
 			if (m_matrix[robot.first][robot.second + 1] != -1 && k != 0)
-				Move_up(puncte, k, stiva, robot);
+				Move_right(puncte, k, stiva, robot);
 
 	}
 	void Path(std::stack<std::pair<int, int>>& stack, int fuel)
